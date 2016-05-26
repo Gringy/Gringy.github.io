@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Finder</title>
+	<style>
+		* {
+			margin: 0 0 0 0;
+			overflow: hidden;
+			font-size: 10pt;
+		}
+		html, body {
+			height: 100%;
+		}
+		.main {
+			height: 100%;
+		}
+		.left-pad {
+			width: 20%;
+			float: right;
+		}
+		canvas {
+			width: 80%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<canvas id="canvas"></canvas>
+	<div class="left-pad">
+		<button id="regen">Новая карта</button>
+		<button id="go">Go</button>
+		<br>
+		<p id="gen"></p>
+		<button id="+">+</button>
+		<button id="-">-</button>
+		<br>
+		<p>Оставлять особей:</p>
+		<input type="text" id="kill" value="40">
+		<br>
+		<p>Мутировать особей:</p>
+		<input type="text" id="mutate" value="100">
+		<br>
+		<p>Добавлять мутантов:</p>
+		<input type="text" id="addmutants" value="1">
+		<br>
+		<input type="checkbox" id="colors"> Рисовать цвета дорог поверх пути
+		<br>
+		<input type="checkbox" id="fast" checked="true"> Карта с одной быстрой дорогой
+		<br>
+		<input type="checkbox" id="numbers"> Рисовать номера сегментов пути
+		<br>
+		<input type="checkbox" id="long"> Искать длиннейший
+	</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
